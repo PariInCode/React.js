@@ -1,6 +1,5 @@
 import{usestate}from'react'
 
-
 import { useState } from 'react'
 
 import reactLogo from './assets/react.svg'
@@ -28,11 +27,11 @@ function App() {
   return (
     <>
       <h1>just react</h1>
-      <h2>Counter value:counter</h2>
+      <h2>Counter value:{counter}</h2>
 
-      <button onClick={addvalue}>add value{counter}</button>
+      <button onClick={addvalue}>add value</button>
       <br />
-      <button onClick={removevalue}>remove value{counter}</button>
+      <button onClick={removevalue}>remove value</button>
     </>
   )
 }
