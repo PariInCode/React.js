@@ -18,7 +18,11 @@ function App() {
   const addvalue = ()=>{
     
     //counter=counter+1
-    setCounter(counter+1)
+    setCounter(prevCounter=>prevCounter=1)
+    setCounter(prevCounter=>prevCounter=1)
+    setCounter(prevCounter=>prevCounter=1)
+    setCounter(prevCounter=>prevCounter=1)//out as 16 only one update at a time so yeah beryyy beryy imp for interviews but using this we will get 19 as we are using call back funcion which first take value update it and then take new value 
+    
   }
 
   const removevalue = ()=>{
