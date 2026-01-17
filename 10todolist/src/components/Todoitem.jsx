@@ -2,7 +2,12 @@ import React from "react";
 function Todoitem({ todo, toggleTodo, deleteTodo }) {
   return (
 
-    <div className="flex items-center gap-2 bg-white/80 p-2 rounded-lg">
+    <div className={`flex items-center gap-3 p-3 rounded-xl transition-all duration-300
+        ${todo.completed
+          ? "bg-green-200"
+          : "bg-pink-200"}
+      `}
+    >
       <input
         type="checkbox"
         checked={todo.completed}
